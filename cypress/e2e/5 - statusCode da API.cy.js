@@ -1,5 +1,5 @@
 
-describe('Deifinir retorno de status da API', () => {
+describe('Duble de teste com API', () => {
 
     beforeEach(() => {
         cy.visit('https://3076-cypress-alurapic-front.vercel.app/.')
