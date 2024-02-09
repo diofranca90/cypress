@@ -12,3 +12,7 @@
 // cy.intercept() - Para intercepitar chamadas realizadas pela API
 // cy.wait() - Para chamar o método de interceptação ('@stubPost')
 
+// ..support/commands.js - Arquivo com metodos para simplicar os comandos mais utilizados 
+// cypress.env.json - Arquivo criado para boas praticas e não mostras dados especificos
+
+// ..fixtures - Local para criar as massas de teste no formato json
