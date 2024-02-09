@@ -5,7 +5,7 @@ describe('Cadastro incorreto', () => {
     cy.visit('https://3076-cypress-alurapic-front.vercel.app/.')
   })
 
-  it('Verifica mensagens dos campos obrigatórios', () => {
+  it('Verifica as mensagens dos campos obrigatórios', () => {
     cy.contains('a', 'Register now').click()
     cy.contains('button', 'Register').click()
     cy.contains('button', 'Register').click()

@@ -5,7 +5,7 @@ describe('Login incorreto', () => {
     cy.visit('https://3076-cypress-alurapic-front.vercel.app/.')
   })
 
-  it('Verifica mensagens dos campos obrigatórios', () => {
+  it('Verifica as mensagens dos campos obrigatórios', () => {
     cy.contains('User name is required!').should('be.visible')
     cy.contains('Password is required!').should('be.visible')
   })
