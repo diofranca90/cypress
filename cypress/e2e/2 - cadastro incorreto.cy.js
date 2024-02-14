@@ -6,9 +6,9 @@ describe('Cadastro incorreto', () => {
   })
 
   it('Verifica as mensagens dos campos obrigatórios', () => {
-    cy.contains('a', 'Register now').click()
-    cy.contains('button', 'Register').click()
-    cy.contains('button', 'Register').click()
+    cy.get('[data-test="register"]').click()
+    cy.get('[data-test="btnRegister"]').click()
+    cy.get('[data-test="btnRegister"]').click()
     cy.contains('Email is required!').should('be.visible')
     cy.contains('Full name is required!').should('be.visible')
     cy.contains('User name is required!').should('be.visible')

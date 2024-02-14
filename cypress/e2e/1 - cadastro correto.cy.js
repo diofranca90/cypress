@@ -1,4 +1,6 @@
 
+import Cadastro from '../support/pages/1 - cadastro/paginaCadastro'
+
 describe('Cadastro correto', () => {
 
   beforeEach(() => {
@@ -6,12 +8,12 @@ describe('Cadastro correto', () => {
   })
 
   it('Criando um usuário na pagina de cadastro corretamente', () => {
-    cy.contains('a', 'Register now').click()
-    cy.get('[data-test="email"]').type('diorfranca@email.com.br')
-    cy.get('[data-test="fullName"]').type('Diorgenes Franca')
-    cy.get('[data-test="registerUserName"]').type('diorfranca')
-    cy.get('[data-test="registerPassword"]').type('diorfranca90')
-    cy.contains('button', 'Register').click()
+
+    // funções importadas para serem executadas
+    Cadastro.acessarPaginaDeCadastro()
+    Cadastro.preencherFormulario()
+    Cadastro.submeterCadastro()
+
   })
 
 })

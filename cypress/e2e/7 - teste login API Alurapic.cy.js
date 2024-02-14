@@ -1,6 +1,6 @@
 describe('Teste API Alurapic', () => {
 
-    it('Dados da API', () => {
+    it('Dados da API login', () => {
         cy.request({
             method: 'POST',
             url: 'https://alurapic-api.onrender.com/user/login',
@@ -12,7 +12,6 @@ describe('Teste API Alurapic', () => {
             expect(res.body.id).to.be.equal(123)
         })
    
-
     })
   
   })

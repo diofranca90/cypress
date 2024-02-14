@@ -11,8 +11,14 @@
 // beforeEach - Para ser executado antes de cada etapa de teste 
 // cy.intercept() - Para intercepitar chamadas realizadas pela API
 // cy.wait() - Para chamar o método de interceptação ('@stubPost')
+// POST - Eviando dados para a API
+// GET - Recebendo dados da API
+// export - Para disponibilizar o arquivo para exportação 
+// import - Para importar um arquivo
 
 // ..support/commands.js - Arquivo com metodos para simplicar os comandos mais utilizados 
 // cypress.env.json - Arquivo criado para boas praticas e não mostras dados especificos
 
 // ..fixtures - Local para criar as massas de teste no formato json ex. criado (usuario.json)
+
+// ..suport - Local para criar a pasta "pages" para captura de elementos de cada teste criado para facilitar nos scripts de teste
